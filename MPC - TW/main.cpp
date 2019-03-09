@@ -122,7 +122,7 @@ int main() {
           double* y_pointer = &ptsy[0];
           Eigen::Map<Eigen::VectorXd> ptsy_con(y_pointer,6); 
 
-        // TODO: fit a polynomial to the above x and y coordinates
+         //fit a polynomial to the above x and y coordinates
           auto coeffs = polyfit(ptsx_con, ptsy_con, 3);
           // since car is shifted to origin, use 0
           double cte = polyeval(coeffs, 0);
