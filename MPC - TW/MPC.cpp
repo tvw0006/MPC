@@ -9,7 +9,7 @@ using namespace std;
 
 using CppAD::AD;
 
-// TODO: Set the timestep length and duration
+Set the timestep length and duration
 size_t N = 8; //  = 8;
 double dt_ = .15; // = .15;
 double ref_v = 100;
@@ -254,7 +254,7 @@ for (int i = a_start; i < n_vars; i++) {
   auto cost = solution.obj_value;
   //std::cout << "Cost " << cost << std::endl;
 
-  // TODO: Return the first actuator values. The variables can be accessed with
+  // Return the first actuator values. The variables can be accessed with
   // `solution.x[i]`.
   //
   // {...} is shorthand for creating a vector, so auto x1 = {1.0,2.0}
